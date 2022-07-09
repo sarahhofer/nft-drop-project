@@ -20,7 +20,6 @@ const opts = {
 };
 
 const CandyMachine = ({ walletAddress }) => {
-
   const getCandyMachineCreator = async (candyMachine) => {
     const candyMachineID = new PublicKey(candyMachine);
     return await web3.PublicKey.findProgramAddress(
